@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TP Programacion III PostgreSql</title>
+</head>
+<body>
+    <h1>Consulta de Notas</h1>
+    <form id="formAlumno">
+        <label for="nombreAlumno">Nombre del Alumno:</label>
+        <input type="text" id="nombreAlumno" name="nombreAlumno">
+        <button type="button" onclick="consultarPorAlumno()">Consultar</button>
+    </form>
+
+    <div id="resultadoAlumno"></div>
+
+    <h2>Consultar por Materia</h2>
+    <form id="formMateria">
+        <label for="nombreMateria">Nombre de la Materia</label>
+        <input type="text" id="nombreMateria" name="nombreMateria">
+        <button type="button" onclick="consultarPorMateria()">Consultar</button>
+    </form>
+
+    <div id="resultadoMateria"></div>
+    
+    <br>
+    <br>
+
+    <div class="containerBtns">
+        <div class="containerBtns2">
+            <a href="/agregarAlumno.html">
+                <button type="button">Agregar Alumno</button>
+            </a>
+            <br>
+            <a href="/agregarMateria.html">
+                <button type="button">Agregar Materia</button>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>

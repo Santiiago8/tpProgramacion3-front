@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agregar Materia</title>
+</head>
+<body>
+    <h1>Agregar Materia</h1>
+    <form id="formAgregarMateria">
+        <label for="nombreMateria">Nombre de la Materia:</label>
+        <input type="text" id="nombreMateria" name="nombreMateria" required>
+        <label for="anioMateria">Año:</label>
+        <input type="text" id="anioMateria" name="anioMateria" required>
+        <button type="button" onclick="agregarMateria()">Agregar</button>
+    </form>
+    <div id="resultadoAgregarMateria"></div>
+</body>
+<script src="scripts.js"></script>
+</html>
